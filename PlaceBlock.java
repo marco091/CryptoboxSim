@@ -17,7 +17,7 @@ public class PlaceBlock extends Robot
      */
     public void act() 
     {
-        if(Greenfoot.isKeyDown("1")){
+        if(Greenfoot.isKeyDown("left")){
             if(!leftPress){
                 leftPress = true;
                 blockCheck(Columns.LEFT);
@@ -25,7 +25,7 @@ public class PlaceBlock extends Robot
         }else{
             leftPress = false;
         }    
-        if(Greenfoot.isKeyDown("2")){
+        if(Greenfoot.isKeyDown("up") || Greenfoot.isKeyDown("down")){
             if(!centerPress){
                 centerPress = true;
                 blockCheck(Columns.CENTER);
@@ -33,7 +33,7 @@ public class PlaceBlock extends Robot
         }else{
             centerPress = false;
         }
-        if(Greenfoot.isKeyDown("3")){
+        if(Greenfoot.isKeyDown("right")){
             if(!rightPress){
                 rightPress = true;
                 blockCheck(Columns.RIGHT);

@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class CryptoboxSim extends World
 {
-
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -19,7 +18,6 @@ public class CryptoboxSim extends World
         super(600, 400, 1); 
         prepare();
     }
-
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -34,18 +32,20 @@ public class CryptoboxSim extends World
         addObject(cryptoboxedge3,310,205);
         CryptoboxEdge cryptoboxedge4 = new CryptoboxEdge();
         addObject(cryptoboxedge4,340,205);
+        Robot.reset();
         Ground ground = new Ground();
         addObject(ground,300,250);
-        Belt belt = new Belt();
-        addObject(belt,500,50);
+        FlippyBoi flippyboi = new FlippyBoi();
+        addObject(flippyboi,500,50);
         ReloadButton reloadbutton = new ReloadButton();
         addObject(reloadbutton,500,300);
         PlaceBlock placeblock = new PlaceBlock();
         addObject(placeblock,550,300);
-        Robot.reset();
         Key key = new Key();
         addObject(key,100,50);
         CryptoBox cryptobox = new CryptoBox();
         addObject(cryptobox,100,200);
+        Timer timer = new Timer();
+        addObject(timer,300,300);
     }
 }
