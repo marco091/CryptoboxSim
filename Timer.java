@@ -9,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Timer extends Actor
 {
     boolean init = false;
-    boolean done = false;
     long startTime;
     long currentTime;
     /**
@@ -21,9 +20,9 @@ public class Timer extends Actor
         if(!init){
             startTime = System.currentTimeMillis();
             init=!init;
-        }else if(!done){
+        }else{
             if(Greenfoot.isKeyDown("3")){
-                done=!done;
+                Greenfoot.stop();
             }
             currentTime = System.currentTimeMillis();
             long time = currentTime - startTime;

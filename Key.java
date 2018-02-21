@@ -14,11 +14,12 @@ public class Key extends Robot
     public Keys key=Keys.UNKNOWN;
     public Key(){
         while(key==Keys.UNKNOWN){
-            if(Math.ceil(Math.random()*3)== 1){
+            int rand = (int) Math.ceil(Math.random()*3);
+            if(rand == 1){
                 key=Keys.LEFT;
-            }else if(Math.ceil(Math.random()*3)== 2){
+            }else if(rand== 2){
                 key=Keys.CENTER;
-            }else if(Math.ceil(Math.random()*3)== 3){
+            }else if(rand== 3){
                 key=Keys.RIGHT;
             }
         }
