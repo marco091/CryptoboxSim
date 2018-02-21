@@ -10,5 +10,3 @@ When you are done filling the box, press 3 to stop the timer.
 
 # Resources
 The correct ciphers can be found in the Appendix E of https://www.firstinspires.org/sites/default/files/uploads/resource_library/ftc/2017-2018/game-manual-part-2.pdf
-
-Get Greenfoot here: https://www.greenfoot.org/download
